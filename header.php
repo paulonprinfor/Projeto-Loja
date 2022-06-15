@@ -28,7 +28,6 @@
 			</a>
 		
 		</div>
-			
 		<nav class="main-menu">
 			
 			<?php

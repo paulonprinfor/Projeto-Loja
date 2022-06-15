@@ -1,0 +1,51 @@
+.main-header {
+  .search {
+    margin-top: 2rem;
+    .content {
+      display: flex;
+      align-items:center;
+    
+        span {
+          margin-left: -3rem;
+          cursor: pointer;
+          pointer-events: none;
+        }
+        form {
+          input {
+            width: 12rem;
+            background-color: #cccc;
+            border:none;
+            padding: 0.5rem;
+            border-radius:4rem;
+
+          }
+      }
+    }
+  }
+  .centered-container {
+    display: flex;
+    align-items:center;
+  }
+  #searchsubmit {
+    width: 5rem;
+    padding: 0.5rem;
+    border: transparent;
+    background:transparent;
+    color:transparent;
+    cursor: pointer;
+  }
+
+  .main-header__logo {
+    img {
+      margin-top: 2rem;
+      margin-right: 12rem;
+    }
+  }
+
+  .cart {
+    position: relative;
+    right: -40%;
+    cursor: pointer;
+  }
+}
+

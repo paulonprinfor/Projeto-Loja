@@ -1,4 +1,5 @@
 <?php get_header();?>
+
   <div class="centered-container">
     <?php 
       if( have_posts() ):

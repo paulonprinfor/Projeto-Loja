@@ -1,5 +1,4 @@
 <?php get_header();?>
-
   <div class="centered-container">
     <?php 
       if( have_posts() ):
@@ -18,6 +17,7 @@
       endif;
   ?>
   </div>
+  <?php get_template_part('template-parts/home-page') ?>
 <?php get_footer();?>
 
   

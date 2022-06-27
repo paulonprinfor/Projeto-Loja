@@ -1,12 +1,36 @@
+
 .centered-container {
   
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    
-  
-    #sidebar {
-      margin-right: 2rem;
-    }
+  display: flex;
+
+  #sidebar {
+    margin-right: 2rem;
+   }
+}
+
+.content-area {
+  h2 {
+    color: #000;
+  }
+
+  p {
+    color:#000;
   }
 }
+
+.woocommerce ul.products li.product .price {
+  color:#000;
+}
+
+.woocommerce-cart 
+table.cart td.actions 
+.coupon .input-text {
+  width: 10rem;
+}
+
+@media (max-width:1200px) {
+.centered-container {
+  padding: 1rem;
+  }
+}
+

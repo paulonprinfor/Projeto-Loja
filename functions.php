@@ -29,9 +29,9 @@ add_theme_support('woocommerce', array(
           'default_rows'    => 10,
           'min_rows'        => 5,
           'max_rows'        => 10,
-          'default_columns' => 3,
-          'min_columns'     => 3,
-          'max_columns'     => 3,
+          'default_columns' => 4,
+          'min_columns'     => 4,
+          'max_columns'     => 4,
   )
 ));
 
@@ -43,9 +43,35 @@ if ( ! isset( $content_width ) ) {
   $content_width = 600;
 }
 
+add_image_size( 'banners-slider', 1920, 800, array( 'center', 'center' ) );
+
+if( class_exists( 'WooCommerce' )){
+	require get_template_directory() . '/src/inc/wc-modifications.php';
+}
+
+
 function get_img_uri() {
   return get_template_directory_uri() . '/src/img';
 }
+
+
+/**
+ * Show cart contents / total Ajax
+ */
+add_filter( 'woocommerce_add_to_cart_fragments', 'fancy_lab_woocommerce_header_add_to_cart_fragment' );
+
+function fancy_lab_woocommerce_header_add_to_cart_fragment( $fragments ) {
+	global $woocommerce;
+
+	ob_start();
+
+	?>
+	<span class="items"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+	<?php
+	$fragments['span.items'] = ob_get_clean();
+	return $fragments;
+}
+
 
 
 // Função de mostrar banners

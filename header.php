@@ -17,7 +17,7 @@
 		<div class="search">
 			<div class="content">
 				<?php get_search_form();?>
-				<span class="fa fa-lg fa-search"></span>
+					
 			</div>
 		</div>
 		<div class="centered-container">
@@ -42,7 +42,11 @@
 				?>
 		</nav>
 		<div class="cart">
-			<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+			<a href="<?php echo wc_get_cart_url();?>">
+				<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+			</a>
+				<span class="items"><?php echo WC()->cart->get_cart_contents_count();?></span>
+		
 		</div>
 	</div>
 </header>

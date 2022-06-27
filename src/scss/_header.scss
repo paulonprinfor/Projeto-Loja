@@ -23,6 +23,15 @@
       }
     }
   }
+
+  .search-form button {
+    background:url('../src/img/search.svg');
+    height: 1.5rem;
+    width: 1.5rem;
+    border:none;
+    cursor: pointer;
+    
+  }
   .centered-container {
     display: flex;
     align-items:center;
@@ -45,8 +54,20 @@
 
   .cart {
     position: relative;
-    right: -40%;
+    right: -13%;
     cursor: pointer;
+    
+
+    .items {
+      background:#CA2424;
+      width: 1rem;
+      height: 1rem;
+      border-radius:50%;
+      display: inline-block;
+      text-align: center;
+      color:#fff;
+      font-size: 0.75rem;
+    }
   }
 }
 

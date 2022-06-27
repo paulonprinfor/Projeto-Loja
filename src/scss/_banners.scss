@@ -1,0 +1,56 @@
+.banners {
+  position: relative;
+
+  .banner-item {
+    position: relative;
+  }
+ 
+  .button-nav {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    z-index: 10;
+    
+    background: transparent;
+    cursor: pointer;
+    width: 4rem;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-nav-prev {
+    right: 10%;
+    font-size: 2rem;
+  }
+
+  .button-nav-next {
+    left: 10%;
+    font-size: 2rem;
+  }
+
+  .legenda {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:#fff;
+
+    h1 {
+      font-size: 3rem;
+      color:#fff;
+    }
+    h4 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .banner-btn {
+    width: 10rem;
+    background:#CA2424;
+    padding: 1rem;
+    border-radius:1rem;
+    margin-left: 7rem;
+  }
+}

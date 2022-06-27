@@ -12,10 +12,12 @@ Version: 1.0
 @charset "UTF-8";
 
 @import 'global';
-
+@import 'slick';
 @import 'global';
 @import 'font-awesome';
 @import 'header';
 @import 'menu';
 @import'footer';
 @import 'front-page';
+@import 'page';
+@import'banners';
